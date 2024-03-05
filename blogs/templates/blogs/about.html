@@ -1,0 +1,15 @@
+{% extends 'blogs/base.html' %}
+
+{% block content %}
+
+    <h1 class="bg">
+        About Authors
+    </h1>
+    {% for post in posts %}
+        <div><b>Author Name: {{post.author}}</b></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, ducimus in neque iste animi quidem quae eos veritatis eligendi autem delectus cumque magni a quam enim velit reiciendis magnam sapiente veniam ipsam! Dolorum voluptatem, illo commodi magnam voluptatum sit! Nostrum itaque repudiandae natus, ut illo doloremque reiciendis incidunt, debitis a architecto fuga. Architecto, animi vero! Nulla fugit libero aut ducimus nihil sint optio numquam nostrum itaque. Quisquam velit nemo, libero error porro fugiat distinctio tempora facilis ad aut quia vitae at ipsum consectetur veniam. Corporis exercitationem magnam eos ratione natus aspernatur corrupti ipsam dicta dolore, nisi vero voluptates temporibus suscipit?</p>
+        <br>
+        <hr>
+        <br>
+    {% endfor %}
+{% endblock content %}
